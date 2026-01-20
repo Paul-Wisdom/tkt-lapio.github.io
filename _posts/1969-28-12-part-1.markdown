@@ -720,7 +720,7 @@ total 8
 -rw-r--r-- 1 user user 16 Jun 31 21:41 example.txt
 -rwxr--r-- 1 user user 0 Jun 14 17:25 notes.txt
 -r--r--r-- 1 user user 0 Jun 3 23:13 article.txt
-drwx------ 2 user user 130 Jun 14 17:54 diart
+drwx------ 2 user user 130 Jun 14 17:54 diary
 ```
 
 Each file and folder in the directory has its own line. The first column in the output, containing different mixtures of letters and dashes, describes the the type and the permissions of the file. 
@@ -735,7 +735,7 @@ After permissions one can see the number of links pointing to a file. In folders
 
 Next one can see the owner and the group of a file. In this case the group of the file is the username `user`. Lastly you can see the size of the file in [bytes](https://en.wikipedia.org/wiki/Byte), the day it was last edited, and its name.
 
-In the example above the `notes.txt` file's owner has read, write and execute permissions. The group and others only have the read permission. The `diary` directory has read, write and execute permissions only for its owner, the group and others don't have any permissions. The file `article.txt` can be read by everyone, but it can't be read or edited by anyone.
+In the example above the `notes.txt` file's owner has read, write and execute permissions. The group and others only have the read permission. The `diary` directory has read, write and execute permissions only for its owner, the group and others don't have any permissions. The file `article.txt` can be read by everyone, but it can't be edited or executed by anyone.
 
 
 ![A picture depicting the components of the output of ls -l](/assets/permission-exp.png){:class="img-responsive"}
